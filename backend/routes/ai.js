@@ -72,8 +72,8 @@ router.post('/analyze-resume', upload.single('resume'), async (req, res) => {
       """
       
       Based entirely on the skills, technologies, and specific experiences mentioned in this resume, generate:
-      1. exactly 20 HIGHLY ADVANCED, expert-level multiple-choice questions to deeply test this candidate's proficiency. These should not be basic trivia, but complex scenario-based technical questions.
-      2. 25 to 30 EXTREMELY DIFFICULT open-ended technical and behavioral interview questions for verbal practice, focusing on edge cases, architecture, and advanced problem-solving.
+      1. exactly 5 HIGHLY ADVANCED, expert-level multiple-choice questions to deeply test this candidate's proficiency. These should not be basic trivia, but complex scenario-based technical questions.
+      2. exactly 5 EXTREMELY DIFFICULT open-ended technical and behavioral interview questions for verbal practice, focusing on edge cases, architecture, and advanced problem-solving.
       
       IMPORTANT: Return the output strictly as a JSON object with this shape:
       {
@@ -178,8 +178,8 @@ router.post('/generate-from-skills', async (req, res) => {
       Key Skills/Ideas: ${skills}
       
       Based entirely on these skills and the role context, generate:
-      1. exactly 20 HIGHLY ADVANCED, expert-level multiple-choice questions to deeply test this candidate's proficiency. These should not be basic trivia, but complex scenario-based technical questions.
-      2. 25 to 30 EXTREMELY DIFFICULT open-ended technical and behavioral interview questions for verbal practice, focusing on edge cases, architecture, and advanced problem-solving.
+      1. exactly 5 HIGHLY ADVANCED, expert-level multiple-choice questions to deeply test this candidate's proficiency. These should not be basic trivia, but complex scenario-based technical questions.
+      2. exactly 5 EXTREMELY DIFFICULT open-ended technical and behavioral interview questions for verbal practice, focusing on edge cases, architecture, and advanced problem-solving.
       
       IMPORTANT: Return the output strictly as a JSON object with this shape:
       {
