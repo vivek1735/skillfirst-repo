@@ -1,0 +1,18 @@
+[build]
+  command = "npm install --prefix backend && npm run build"
+  publish = "dist"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Redirect API calls to the serverless backend
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+
+# Catch-all redirect to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
